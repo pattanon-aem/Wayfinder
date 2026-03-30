@@ -1,5 +1,5 @@
 # Wayfinder – Smart Transport Navigation Platform
-
+[🌐 Live Demo](https://www.wayfinder.ink) • [📄 Documentation](#)
 ---
 
 ## Overview
@@ -98,12 +98,6 @@ My contributions include:
 - Assisted in integrating external APIs 
 - Participated in debugging, testing, and improving overall system performance  
 - Collaborated with team members using Git for version control and project coordination
-
----
-
-## Demo
-
-https://www.wayfinder.ink
 
 ---
 
