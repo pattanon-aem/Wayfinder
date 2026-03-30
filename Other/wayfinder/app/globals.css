@@ -1,0 +1,165 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #000000;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-inter);
+  --font-weight-thin: 100;
+  --font-weight-extralight: 200;
+  --font-weight-light: 300;
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  --font-weight-extrabold: 800;
+  --font-weight-black: 900;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #000000;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-inter), sans-serif;
+}
+
+@layer base {
+  h1 {
+    @apply text-4xl md:text-[44px] font-medium
+  }
+
+  h2 {
+    @apply text-3xl md:text-[48px] font-medium
+  }
+
+  h3 {
+    @apply flex text-base md:text-xl font-normal
+  }
+}
+
+
+.glowyButton {
+  @apply w-fit px-4 py-2 text-xs md:text-sm text-black bg-white rounded-md gap-2 items-center;
+}
+
+.authInput {
+  @apply w-full px-4 py-2 outline-none rounded-full border border-[#363636]
+}
+
+.authButton1 {
+  @apply flex w-full justify-between items-center border border-[#363636] py-2 px-4 rounded-full font-medium cursor-pointer hover:bg-[#363636]/30 duration-300 ease-in-out transition-colors;
+}
+
+.authButton2 {
+  @apply flex w-full justify-center items-center bg-white text-black py-2 px-4 rounded-full font-medium cursor-pointer
+}
+
+.onboardingInput {
+  @apply text-sm w-full bg-gray-900 border border-gray-700 rounded-full px-4 py-2 focus:outline-none focus:border-blue-500
+}
+
+.gm-control-active {
+  background-color: #121212 !important;
+  border: 1px solid #383838 !important;
+}
+
+.gm-control-active:hover {
+  background-color: #1a1a1a !important;
+}
+
+.gm-control-active > img {
+  filter: invert(1) !important;
+}
+
+.gm-style .gm-style-iw-c {
+  background-color: #141414 !important;
+  border: 1px solid #212121 !important;
+  border-radius: 8px !important;
+  padding: 12px !important;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3) !important;
+}
+
+.gm-style .gm-style-iw-d {
+  overflow: auto !important;
+  color: #e7e7e7 !important;
+}
+
+.gm-style .gm-style-iw-t::after {
+  background: #141414 !important;
+  box-shadow: -2px 2px 2px 0 rgba(0, 0, 0, 0.2) !important;
+}
+
+.gm-ui-hover-effect {
+  background-color: #212121 !important;
+  border-radius: 50% !important;
+  opacity: 1 !important;
+  width: 24px !important;
+  height: 24px !important;
+  top: 8px !important;
+  right: 8px !important;
+}
+
+.gm-ui-hover-effect:hover {
+  background-color: #2a2a2a !important;
+}
+
+.gm-ui-hover-effect > span {
+  background-color: #e7e7e7 !important;
+  margin: 6px !important;
+  width: 12px !important;
+  height: 12px !important;
+}
+
+.containerList{
+  @apply w-full bg-[#141414] border border-[#212121] rounded hover:bg-[#1a1a1a] transition-colors p-4 text-left;
+}
+
+.accountCard {
+  @apply bg-[#0a0a0a] border border-[#1a1a1a] rounded-lg;
+}
+
+.accountInput {
+  @apply w-full bg-[#0a0a0a] border border-[#1a1a1a] rounded-md px-3 py-2 text-xs text-gray-300 placeholder-gray-700 focus:outline-none focus:border-[#2a2a2a] transition-all duration-200;
+}
+
+.accountInputLabel {
+  @apply block text-[11px] font-normal text-gray-600 mb-1.5;
+}
+
+.accountButton {
+  @apply px-4 py-2 bg-[#1a1a1a] text-gray-400 text-xs font-normal rounded-md hover:bg-[#222] hover:text-gray-300 transition-all duration-200 disabled:opacity-50;
+}
+
+.accountButtonOutline {
+  @apply px-4 py-2.5 bg-[#0a0a0a] border border-[#1a1a1a] hover:bg-[#111] hover:border-[#2a2a2a] rounded-md text-xs font-normal text-gray-400 hover:text-gray-300 transition-all;
+}
+
+.accountTab {
+  @apply pb-3 text-xs font-normal transition-all duration-200 relative text-gray-600 hover:text-gray-400;
+}
+
+.accountTabActive {
+  @apply text-white;
+}
+
+.accountSectionTitle {
+  @apply text-xs font-normal text-white;
+}
+
+.accountSectionSubtitle {
+  @apply text-xs text-gray-600 mt-0.5;
+}
+
+.accountDivider {
+  @apply h-px bg-[#1a1a1a] my-2;
+}
