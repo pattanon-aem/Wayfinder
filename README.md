@@ -1,5 +1,5 @@
 # Wayfinder – Smart Transport Navigation Platform
-[🌐 Live Demo](https://www.wayfinder.ink) • [📄 Documentation](#)
+[🌐 Live Demo](https://www.wayfinder.ink)
 ---
 
 ## Overview
